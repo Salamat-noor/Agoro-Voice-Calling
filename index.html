@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="room-header">
+        <h1 id="room-name"></h1>
+
+        <div id="room-header-controls">
+          <img id="mic-icon" class="control-icon" src="mic-off.svg" />
+          <img id="leave-icon" class="control-icon" src="leave.svg" />
+        </div>
+      </div>
+
+      <form id="form">
+        <div class="flex justify-center mb-9">
+          <img
+            src="https://logowik.com/content/uploads/images/3699-agora.webp"
+            alt=""
+            width="100%"
+            height="auto"
+          />
+        </div>
+        <input
+          name="username"
+          type="text"
+          id="username"
+          placeholder="Enter display name..."
+        />
+        <input
+          id="roomname"
+          name="roomname"
+          type="text"
+          value="pakistan"
+          placeholder="Enter room name..."
+        />
+        <input name="username" type="submit" value="Enter Room" />
+      </form>
+
+      <div id="members"></div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
